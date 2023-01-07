@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV246YDWRC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BV246YDWRC');
+    </script>
+    <base href="$FLUTTER_BASE_HREF">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="リロイと申します。学生ボカロP ご依頼・ご連絡はcontact@riloi.comまで">
+
+    <meta property="og:title" content="リロイ/ЯiLoI | オフィシャルサイト">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.riloi.com/">
+    <meta property="og:image" content="https://riloi.com/icons/Riloi-white-512.webp">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="ЯiLoI logo">
+    <meta property="og:description" content="リロイと申します。学生ボカロP ご依頼・ご連絡はcontact@riloi.comまで">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@riloi_music">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="リロイ/ЯiLoI | オフィシャルサイト">
+    <link rel="apple-touch-icon" href="icons/Riloi-white-512.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>リロイ/ЯiLoI | オフィシャルサイト</title>
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+      var serviceWorkerVersion = null;
+    </script>
+    <script src="flutter.js" defer></script>
+  </head>
+  <body>
+    <div id="loading">
+      <style>
+        @media (prefers-color-scheme: light) {
+          :root {
+            --main-color: #dbdbdb;
+          }
+        }
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --main-color: #242424;
+          }
+        }
+        body {
+          inset: 0; overflow: hidden;
+          margin: 0; padding: 0;
+          position: fixed;
+          background-color: var(--main-color);
+        }
+        #loading {
+          align-items: center;
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          width: 100%;
+        }
+        #loading img {
+          animation: loading 1s infinite;
+          transition: opacity .4s;
+        }
+        #loading.done img {
+          animation: .33s ease-in-out 0s 1 forwards done;
+          opacity: .05;
+        }
+        @keyframes loading {
+          0% {
+            transform: rotateY(0deg) scale(0.9);
+          }
+          50% {
+            transform: rotateY(360deg) scale(1.1);
+          }
+          100% {
+            transform: rotateY(720deg) scale(0.9);
+          }
+        }
+        @keyframes done {
+          0%  {
+            transform: scale(1)
+          }
+          100% {
+            transform: scale(10)
+          }
+        }
+        </style>
+      <picture>
+        <source type="image/webp" media="(prefers-color-scheme: light) and (min-width: 750px) and (min-height: 600px)" srcset="icons/Riloi-black-512.webp">
+        <source type="image/webp" media="(prefers-color-scheme: light)" srcset="icons/Riloi-black-192.webp">
+        <source type="image/webp" media="(prefers-color-scheme: dark) and (min-width: 750px) and (min-height: 600px)" srcset="icons/Riloi-white-512.webp">
+        <source type="image/webp" media="(prefers-color-scheme: dark)" srcset="icons/Riloi-white-192.webp">
+        <img src="icons/Riloi-white-192.webp" alt="Now Loading" />
+      </picture>
+    </div>
+    <script>
+      window.addEventListener('load', function() {
+          var loading = document.querySelector('#loading');
+          _flutter.loader.loadEntrypoint({
+            serviceWorker: {
+              serviceWorkerVersion: serviceWorkerVersion,
+            }
+          }).then(function(engineInitializer) {
+            return engineInitializer.initializeEngine();
+          }).then(function(appRunner) {
+            loading.classList.add('done');
+            return appRunner.runApp();
+          }).then(function(app) {
+            window.setTimeout(function() {
+              loading.remove();
+            }, 200);
+          });
+        });
+        window.addEventListener('pageshow', function (event) {
+          if (event.persisted) {
+            window.location.reload();
+          }
+        });
+    </script>
+  </body>
+</html>
