@@ -1117,7 +1117,7 @@ class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    int grid = size.height > size.width ? 1 : 2;
+    // int grid = size.height > size.width ? 1 : 2;
     return GestureDetector(
       onHorizontalDragUpdate: (details) {
         if (details.delta.dx > 18) {
