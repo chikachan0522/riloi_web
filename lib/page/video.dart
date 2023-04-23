@@ -120,7 +120,7 @@ List videoList = [
   [
     4,
     "プラットフォーム(β)",
-    "assets/video/platform(β).webp",
+    "assets/video/Platform(β).webp",
     "https://www.youtube.com/watch?v=btssm3tPDOw",
     "2023-03-18"
   ]

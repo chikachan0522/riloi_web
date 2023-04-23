@@ -169,7 +169,7 @@ List singleList = [
   [
     4,
     "プラットフォーム(β)",
-    "assets/discography/platform(β).webp",
+    "assets/discography/Platform(β).webp",
     "https://big-up.style/musics/536287",
     "2023-03-18",
     "single"
