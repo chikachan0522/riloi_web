@@ -16,7 +16,7 @@ mobile Vocaloid editor
 作詞 作曲 / ЯiLoI
 映像 • ロゴデザイン 制作 / AteLiЯ - アトリエ
 字幕制作 / @chikachan_0522 様
-アーティスト写真/ノーコピーライトガール 様
+アーティスト写真/@unknown_knowdes 様
 """;
 
   @override
@@ -49,14 +49,17 @@ mobile Vocaloid editor
             ),
             Column(
               children: [
-                Hero(
-                  tag: "about-image",
-                  child: Center(
-                    child: Image.asset(
-                      Theme.of(context).brightness == Brightness.light
-                          ? "assets/icons/Riloi_black.webp"
-                          : "assets/icons/Riloi_white.webp",
-                      height: size.height / 2,
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Hero(
+                    tag: "about-image",
+                    child: Center(
+                      child: Image.asset(
+                        Theme.of(context).brightness == Brightness.light
+                            ? "assets/icons/Riloi_black.webp"
+                            : "assets/icons/Riloi_white.webp",
+                        height: size.height / 2,
+                      ),
                     ),
                   ),
                 ),
@@ -108,7 +111,7 @@ mobile Vocaloid editor
                 Hero(
                   tag: "about-image",
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Image.asset(
                       Theme.of(context).brightness == Brightness.light
                           ? "assets/icons/Riloi_black.webp"
@@ -125,11 +128,14 @@ mobile Vocaloid editor
                       const Spacer(
                         flex: 2,
                       ),
-                      Hero(
-                        tag: "about-text",
-                        child: Text(
-                          "ABOUT",
-                          style: Theme.of(context).textTheme.headlineLarge,
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+                        child: Hero(
+                          tag: "about-text",
+                          child: Text(
+                            "ABOUT",
+                            style: Theme.of(context).textTheme.headlineLarge,
+                          ),
                         ),
                       ),
                       const Spacer(),
