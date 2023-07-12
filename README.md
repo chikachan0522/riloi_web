@@ -1,3 +1,3 @@
 # riloi_web
 
-A new Flutter project.
+Githubを全部プライベートだからなんとなく公開したレポジトリ非公開前提で書いてるからきもいコードだけど許してね
