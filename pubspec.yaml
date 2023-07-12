@@ -3,7 +3,7 @@ description: リロイと申します。学生ボカロP ご依頼・ご連絡�
 
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 2.0.0+1
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
@@ -18,6 +18,12 @@ dependencies:
   fluro: ^2.0.4
   google_fonts: ^3.0.1
   flutter_riverpod: ^2.1.3
+  draggable_fab: ^0.1.4
+  dio: ^5.0.1
+  dio_http2_adapter: ^2.1.0
+  markdown_widget: ^2.0.0+1
+  loading_animation_widget: ^1.2.0+4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -28,6 +34,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - lib/assets/icons/
-    - lib/assets/video/
-    - lib/assets/discography/
+    - assets/icons/
+    - assets/images/
+    - assets/video/
+    - assets/discography/
